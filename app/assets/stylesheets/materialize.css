@@ -1092,7 +1092,7 @@
 }
 
 .green {
-  background-color: #4CAF50 !important;
+  background-color: #009688 !important;
 }
 
 .green-text {
@@ -2117,6 +2117,7 @@
 
 .black {
   background-color: #000000 !important;
+  opacity: 0.9;
 }
 
 .black-text {
@@ -2129,6 +2130,8 @@
 
 .white-text {
   color: #FFFFFF !important;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .transparent {
