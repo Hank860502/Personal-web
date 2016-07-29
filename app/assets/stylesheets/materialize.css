@@ -2117,6 +2117,7 @@
 
 .black {
   background-color: #000000 !important;
+  opacity: 0.9;
 }
 
 .black-text {
