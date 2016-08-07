@@ -1,9 +1,9 @@
 # Personal-web
 
-##Stack
+##Stacks
 Ruby on Rails, HTML, CSS
 
-##Framework
+##Frameworks
 JQuery, Materialize
 
 ##Link to the web 
