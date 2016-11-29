@@ -18,3 +18,17 @@
 	height: 20vw;
 
 }
+
+/*#circle {
+  width: 35px;
+  height: 35px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: white;
+}*/
+
+.incircle {
+	margin-left: auto;
+	margin-top: auto;
+}
