@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+.myfooter{
+	background-color: white;
+	height: 20vw;
+}
+
+.footer_links {
+	padding-top: 120px;
+}
+
+.copyright {
+	padding-top: 10px;
+}
+
+i {
+	margin-left: 5px;
+}
+
+hr {
+	width: 40%;
+}
+
+/*#circle {
+  width: 35px;
+  height: 35px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: white;
+}*/

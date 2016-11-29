@@ -10,6 +10,7 @@
 	  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
 	</head>
 
   <body>
@@ -17,7 +18,7 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
   	<script src="js/init.js"></script>
 
-  	<nav class="green" role="navigation">
+  	<nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">Han-Yu Chen</a>
       <ul class="right hide-on-med-and-down">
@@ -26,26 +27,27 @@
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Resume</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   
-  <div class="black">
 		<%= yield %>
-  </div>
 
-  <footer class="page-footer teal">
-    <ul>
-      <li><a class="white-text" href="https://github.com/Hank860502">Github</a></li>
-      <li><a class="white-text" href="https://www.linkedin.com/in/hank860502">Linkedin</a></li>
-      <!-- <li><a class="white-text" href="www.facebook">Facebook</a></li> -->
-    </ul>
-    <div class="footer-copyright">
-      <div class="container">Han-Yu Chen</a></div>
+  <footer class="myfooter">
+    <div class="footer_links">
+      <center><a class="black-text" href="https://github.com/Hank860502"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+      <a class="black-text" href="https://www.linkedin.com/in/hank860502"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+      <a class="black-text" href="mailto:hank860502@gmail.com"><i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i></a>
+      <a class="black-text" href="https://www.facebook.com/profile.php?id=100001986804471"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+      <a class="black-text" href="https://www.instagram.com/hank0502/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+      </center>
     </div>
-  </footer>
+    <hr>
+    <center class="copyright">© Hank Chen | 2016</center>
 
+  </footer>
 	</body>
 </html>
