@@ -14,20 +14,24 @@
  *= require_self
  */
 .myfooter{
-	background-color: #191919;
-	height: 30vw;
+	background-color: white;
+	height: 20vw;
 }
 
 .footer_links {
-	padding-top: 70px;
+	padding-top: 120px;
 }
 
 .copyright {
-	padding-top: 50px;
+	padding-top: 10px;
 }
 
 i {
 	margin-left: 5px;
+}
+
+hr {
+	width: 40%;
 }
 
 /*#circle {
