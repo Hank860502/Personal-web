@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+.myfooter{
+	background-color: #191919;
+	height: 20vw;
+
+}
