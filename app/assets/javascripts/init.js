@@ -34,6 +34,18 @@ function linkReturnsColor(e){
 
 function spendIntro(e){
 	e.preventDefault();
+	var a = $(this);
+	var b = $(this).parent();
+	var c = $(this).parent().parent();
+	var d = $(this).parent().parent().attr('.more_text');
+	var e = $('.more_text')
+
+	console.log(a)
+	console.log(b)
+	console.log(c)
+	console.log(d)
+	console.log(e)
+	$("more_text").css({"background-color": "red"});
 }
 
 function newWindow(e){
