@@ -13,7 +13,7 @@ $(document).ready(function() {
 });
 
 var eventListeners = function(){
-	$(".jquery").hover(linkChangesColor, linkReturnsColor);
+	$(".footer_link").hover(linkChangesColor, linkReturnsColor);
 }
 
 
