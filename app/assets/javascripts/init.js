@@ -13,13 +13,18 @@ $(document).ready(function() {
 });
 
 var eventListeners = function(){
-	$(".jquery").on("click", linkChangeColor);
+	$(".jquery").hover(linkChangesColor, linkReturnsColor);
 }
 
 
 
-function linkChangeColor(e){
-	e.preventDefault();
+function linkChangesColor(e){
 	$(this).removeClass("black-text");
-	$(this).addClass("white-text");
+	$(this).addClass("grey-text");
+}
+
+
+function linkReturnsColor(e){
+	$(this).removeClass("grey-text");
+	$(this).addClass("black-text");
 }
