@@ -38,6 +38,10 @@ hr {
 	width: 40%;
 }
 
+a {
+    cursor: pointer;
+}
+
 /*#circle {
   width: 35px;
   height: 35px;
