@@ -15,6 +15,7 @@ $(document).ready(function() {
 var eventListeners = function(){
 	$(".footer_link").hover(linkChangesColor, linkReturnsColor);
 	$(".read_more").on("click", spendIntro);
+	$(".read_less").on("click", hideIntro);
 	$(".read_more").hover(linkChangesColor, linkReturnsColor);
 	$(".new_page").on("click", newWindow)
 }
@@ -34,18 +35,16 @@ function linkReturnsColor(e){
 
 function spendIntro(e){
 	e.preventDefault();
-	var a = $(this);
-	var b = $(this).parent();
-	var c = $(this).parent().parent();
-	var d = $(this).parent().parent().attr('.more_text');
-	var e = $('.more_text')
+	$(".more_text").css({"display": "inline"});
+	$(".original_text").css({"display": "none"})
+	$(".read_more").replaceWith("<a class='black-text read_less' href='#'><i aria-hidden='true' class='fa fa-angle-double-up fa-3x'></i></a>")
+}
 
-	console.log(a)
-	console.log(b)
-	console.log(c)
-	console.log(d)
-	console.log(e)
-	$("more_text").css({"background-color": "red"});
+function hideIntro(e){
+	e.preventDefault();
+	$(".more_text").css({"display": "none"});
+	$(".original_text").css({"display": "inline"})
+	$(this).children().replaceWith("<a class='black-text read_more' href='#'><i aria-hidden='true' class='fa fa-angle-double-down fa-3x'></i></a>")
 }
 
 function newWindow(e){
