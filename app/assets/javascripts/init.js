@@ -21,7 +21,7 @@ $(document).ready(function() {
         onmouseout: function (d, i) { console.log("onmouseout", d, i); }
 	  },
 	  color: {
-	  	pattern: ["#FF8736", "#FF3636", "#369FFF", "#FCFF3B", "#157DDD", "#dd7a15", "#fb9329"]
+	  	pattern: ["#E77400", "#E70000", "#0073E7", "#e9e919", "#74e700", "#68cf00", "#5cb800"]
 	  },
     donut: {
         title: "TECHNOLOGIES"
@@ -46,9 +46,9 @@ $(document).ready(function() {
     	{selector: '#chart', offset: 600, callback: function(el) {
       	chart.load({
 	        columns: [
-	            ["jQuery", 20],
-	            ["D3.js", 15],
-	            ["C3.js", 20],
+	            ["jQuery", 5],
+	            ["D3.js", 5],
+	            ["C3.js", 5],
 	        ]
 	    	});
     	} },
