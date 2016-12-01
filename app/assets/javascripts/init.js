@@ -37,6 +37,12 @@ function linkReturnsColor(e){
 function spanIntro(e){
 	e.preventDefault();
 	$("p").toggle();
+	if($(".read_more").find('i.fa.fa-angle-double-down')[0]){
+		$(".col.s12.center.button_toggle").toggle()} 
+	else { 
+		"replace icon with fa-angle-double-down"
+	}
+	// if($(".read_more").html()==="")
 }
 	// $(".more_text").css({"display": "inline"});
 	// $(".original_text").css({"display": "none"})
