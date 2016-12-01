@@ -21,7 +21,7 @@ $(document).ready(function() {
         onmouseout: function (d, i) { console.log("onmouseout", d, i); }
 	  },
 	  color: {
-	  	pattern: ["#E77400", "#E70000", "#0073E7", "#e9e919", "#74e700", "#68cf00", "#5cb800"]
+	  	pattern: ["#E77400", "#E70000", "#0074E7", "#e7e700", "#00e700", "#74e700", "#68cf00"]
 	  },
     donut: {
         title: "TECHNOLOGIES"
