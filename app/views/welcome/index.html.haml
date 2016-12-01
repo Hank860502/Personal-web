@@ -6,7 +6,7 @@
       %h1.header.center.black-text 陳漢宇
       / 想把header改成手寫中文簽名
       .row.center
-        %h5.header.col.s12.light.black-text ＤＥＶＥＬＯＰＥＲ | ＡＴＨＬＥＴＥ | ＥＮＴＲＥＰＲＥＮＥＵＲ
+        %h5.header.col.s12.light.black-text ＤＥＶＥＬＯＰＥＲ | ＥＮＴＲＥＰＲＥＮＥＵＲ | ＡＴＨＬＥＴＥ
       .row.center
       %br
       %br
@@ -19,22 +19,34 @@
     .row
       .col.s12.m4
         .icon-block
-          %h2.center.brown-text
+          %h2.center.black-text
             %i.material-icons airplay
-          %h5.center ＤＥＶＥＬＯＰＥＲ
-          %p.light Graduated from Dev Bootcamp in San Francisco during my gap year. Attend my first Hackathon in National Taiwan University in August, 2015 and met Jeremy Rosemen, the CEO of Make School, who motivated me to persue my interest in programing.
+          %h5.center DEVELOPER
+          %p.light In August, 2015, I attend my first Hackathon in National Taiwan University, where my interest in computer starts. Learning 3 computer languages, 13 frameworks for web and mobile application development, and 2 test-driven delvelopment, I graduated from Dev Bootcamp in San Francisco during...
+          %p.light.more_text  In August, 2015, I attend my first Hackathon in National Taiwan University, where my interest in computer starts. Learning 3 computer languages, 13 frameworks for web and mobile application development, and 2 test-driven delvelopment, I graduated from Dev Bootcamp in San Francisco during my gap year. Attending big and small competition, I persue my interest in programing and develop my skills in web and mobile development. With my talent in web and mobile application development, my motivation to keep improving is to produce tools that enhance the quality of lives.
+
       .col.s12.m4
         .icon-block
-          %h2.center.brown-text
-            %i.material-icons perm_identity
-          %h5.center ＥＮＴＲＥＰＲＥＮＥＵＲ
-          %p.light We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.
-      .col.s12.m4
-        .icon-block
-          %h2.center.brown-text
+          %h2.center.black-text
             %i.material-icons group
-          %h5.center ＡＴＨＬＥＴＥ
-          %p.light By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.
+          %h5.center ENTREPRENEUR
+          %p.light Combining the practical skills as a developer, and the personality of diversity-mainly built from traveling and working with people from varieties of countries, as a tennis player, I am now able to fulfill most of my startup ideas. What motivates me to learn and to innovate is a “positive jealousy”...
+          %p.light.more_text Combining the practical skills as a developer, and the personality of diversity-mainly built from traveling and working with people from varieties of countries, as a tennis player, I am now able to fulfill most of my startup ideas. What motivates me to learn and to innovate is a “positive jealousy”. People who are more successful than I make me feel a strong curiosity that makes eager to learn. Therefore, I enjoy stepping out of my comfort zone and embrace myself in an unfamiliar enviroment for my best learning. In conclusion, passionate and preseverance are the words to describe myself as an entrepreneur.
+      .col.s12.m4
+        .icon-block
+          %h2.center.black-text
+            %i.material-icons power_settings_new
+          %h5.center ATHLETE
+          %p.light Playing tennis at the professional level since my teenage years allowed me to bring discipline, integrity and perseverance to any goal I am determined to succeed in. Competing in junior's and men's tournaments around the world for more than 8 years, playing 500+ official matches, 50+ cities...
+          %p.light.more_text Playing tennis at the professional level since my teenage years allowed me to bring discipline, integrity and perseverance to any goal I am determined to succeed in. Competing in junior's and men's tournaments around the world for more than 8 years, playing 500+ official matches, 50+ cities in 13 countries, and 100000+ hours on practicing, I could not ask for a more plentiful childhood than this. With the highest ranking of #367 in World Junior Tennis, I begin my journey in men's professional tennis at the age of 18.
+          %a.new_page.more_text{:href=>"http://www.itftennis.com/juniors/players/player/profile.aspx?PlayerID=100211263"} See my ITF profile
+          
+      .col.s12.center.button_toggle
+        %a.black-text.read_more{:href => "#"}
+          %i.fa.fa-angle-double-down.fa-3x{"aria-hidden" => "true"}
+      .col.s12.center.button_toggle.more_text
+        %a.black-text.read_more{:href => "#"}
+          %i.fa.fa-angle-double-up.fa-3x{"aria-hidden" => "true"}
 .parallax-container.valign-wrapper
   .section.no-pad-bot
     .container
@@ -48,13 +60,13 @@
       .col.s12.center
         %h3
           %i.mdi-content-send.brown-text
-        %h4 Contact Us
-        %p.left-align.light Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        %h4 Technologies used
+        %p.left-align.light Giving myself an oppurtunity to learn a new technology, I decide to pick up D3.js to analyze the technologies I used on this website. You can scroll on the bar to see how my technologies has been added events by events. Enjoy my first D3.js project!
 .parallax-container.valign-wrapper
   .section.no-pad-bot
     .container
-      .row.center
-        %h5.header.col.s12.light A modern responsive front-end framework based on Material Design
+      .row.right
+        %h5.col.s12.black-text.intro Hank Chen, 陳漢宇
   .parallax
     %img{:src => "hank.jpg"}/
 

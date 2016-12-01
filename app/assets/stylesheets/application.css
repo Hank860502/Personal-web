@@ -26,12 +26,24 @@
 	padding-top: 10px;
 }
 
+.intro {
+	margin-top: 190px;
+}
+
 i {
 	margin-left: 5px;
 }
 
 hr {
 	width: 40%;
+}
+
+a {
+    cursor: pointer;
+}
+
+.more_text {
+	display: none;
 }
 
 /*#circle {
