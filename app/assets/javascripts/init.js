@@ -10,46 +10,48 @@
 $(document).ready(function() {
 	eventListeners();
 	var chart = c3.generate({
-    data: {
-        columns: [
-            ['HTML5', 60],
-            ["Ruby on Rails", 80],
-        ],
-        type : 'donut',
+	  data: {
+      columns: [
+        ['HTML5', 60],
+        ["Ruby on Rails", 80],
+      ],
+      type : 'donut',
         onclick: function (d, i) { console.log("onclick", d, i); },
         onmouseover: function (d, i) { console.log("onmouseover", d, i); },
         onmouseout: function (d, i) { console.log("onmouseout", d, i); }
-    },
+	  },
     donut: {
         title: "TECHNOLOGIES"
     }
-});
+	});
 
-setTimeout(function () {
-    chart.load({
-        columns: [
-            ["CSS", 40],
-        ]
-    });
-}, 2000);
+	var options = [
+	  	{selector: '#chart', offset: 300, callback: function(el) {
+      	chart.load({
+	        columns: [
+	            ["CSS", 40],
+	        ]
+	    	});
+    	} },
+    	{selector: '#chart', offset: 400, callback: function(el) {
+      	chart.load({
+	        columns: [
+	            ["Javascript", 40],
+	        ]
+	    	});
+    	} },
+    	{selector: '#chart', offset: 600, callback: function(el) {
+      	chart.load({
+	        columns: [
+	            ["jQuery", 20],
+	            ["D3.js", 15],
+	            ["C3.js", 20],
+	        ]
+	    	});
+    	} },
+    ];
 
-setTimeout(function () {
-    chart.load({
-        columns: [
-            ['Javascript', 40],
-        ]
-    });
-}, 2000);
-
-setTimeout(function () {
-    chart.load({
-        columns: [
-            ["jQuery", 20],
-            ["D3.js", 15],
-            ["C3.js", 20],
-        ]
-    });
-}, 2000);
+Materialize.scrollFire(options);
 
 });
 
