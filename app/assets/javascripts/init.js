@@ -29,7 +29,7 @@ $(document).ready(function() {
 	});
 
 	var options = [
-	  	{selector: '#chart', offset: 300, callback: function(el) {
+	  	{selector: '#chart', offset: 310, callback: function(el) {
       	chart.load({
 	        columns: [
 	            ["CSS", 40],
