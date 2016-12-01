@@ -20,6 +20,9 @@ $(document).ready(function() {
         onmouseover: function (d, i) { console.log("onmouseover", d, i); },
         onmouseout: function (d, i) { console.log("onmouseout", d, i); }
 	  },
+	  color: {
+	  	pattern: ["#FF8736", "#FF3636", "#369FFF", "#FCFF3B", "#157DDD", "#dd7a15", "#fb9329"]
+	  },
     donut: {
         title: "TECHNOLOGIES"
     }
