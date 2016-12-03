@@ -64,6 +64,7 @@ var eventListeners = function(){
 	$(".read_more").hover(linkChangesColor, linkReturnsColor);
 	$(".new_page").on("click", newWindow);
 	$(".go_top").on("click", goToTop);
+	$(".go_top").hover(linkChangesColor, linkReturnsColor);
 
 }
 
