@@ -66,10 +66,12 @@
         %div#chart
         / no idea why the chart bind here even with out the line bindto: '#chart', in init.js
     .row
-      .col.s6.right
+      .col.s6
+        .light Try to slide the range bar beside
+      .col.s6
         %form{:action => "#"}
           %p.range-field
-            %input#test5{:max => "100", :min => "0", :type => "range"}
+            %input#test5{:max => "100", :min => "1", :type => "range"}
 
 
 .parallax-container.valign-wrapper
