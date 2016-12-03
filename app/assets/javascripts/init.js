@@ -62,11 +62,16 @@ var eventListeners = function(){
 	$(".footer_link").hover(linkChangesColor, linkReturnsColor);
 	$(".read_more").on("click", spanIntro);
 	$(".read_more").hover(linkChangesColor, linkReturnsColor);
-	$(".new_page").on("click", newWindow)
+	$(".new_page").on("click", newWindow);
+	$(".go_top").on("click", goToTop);
+	$(".go_top").hover(linkChangesColor, linkReturnsColor);
 
 }
 
-
+function goToTop(e){
+	e.preventDefault();
+	$('html, body').animate({scrollTop : 0},800);
+}
 
 
 
