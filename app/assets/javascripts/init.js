@@ -69,7 +69,7 @@ var eventListeners = function(){
 
 function goToTop(e){
 	e.preventDefault();
-
+	$('html, body').animate({scrollTop : 0},800);
 }
 
 
