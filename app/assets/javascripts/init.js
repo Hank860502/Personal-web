@@ -92,7 +92,7 @@ function spanIntro(e){
 	e.preventDefault();
 	$("p.light.intro").toggle();
 	$("a.more_text").toggle();
-	if($(".read_more").find('i.fa.fa-angle-double-down')[0]){
+	if($(".read_more").find('i.fa.fa-angle-down')[0]){
 		$(".col.s12.center.button_toggle").toggle()
 	} 
 }
