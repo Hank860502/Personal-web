@@ -34,7 +34,7 @@ i {
 	margin-left: 5px;
 }
 
-hr {
+hr.footer {
 	width: 40%;
 }
 
@@ -44,6 +44,18 @@ a {
 
 .more_text {
 	display: none;
+}
+
+.navbar-logo {
+	height: 60px;
+	padding-top: 2px;
+}
+
+@media (max-width: 600px) {
+  .navbar-logo {
+    height: 50px;
+    padding-top: 2px;
+  }
 }
 
 /*#circle {
