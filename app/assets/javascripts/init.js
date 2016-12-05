@@ -21,7 +21,7 @@ $(document).ready(function() {
         onmouseout: function (d, i) { console.log("onmouseout", d, i); }
 	  },
 	  color: {
-	  	pattern: ["#E77400", "#E70000", "#0074E7", "#e7e700", "#00e700", "#74e700", "#68cf00"]
+	  	pattern: ["#E77400", "#E70000", "#0074E7", "#e7e700", "#00e700", "#74e700", "#68cf00", "#E70000"]
 	  },
     donut: {
         title: "TECHNOLOGIES"
@@ -49,6 +49,7 @@ $(document).ready(function() {
 	            ["jQuery", 5],
 	            ["D3.js", 5],
 	            ["C3.js", 5],
+	            ["RSpec", 10]
 	        ]
 	    	});
     	} },
