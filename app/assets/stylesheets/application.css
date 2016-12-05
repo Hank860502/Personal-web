@@ -47,8 +47,8 @@ a {
 }
 
 .navbar-logo {
-	height: 60px;
-	padding-top: 2px;
+	height: 59px;
+	padding-top: 3px;
 }
 
 @media (max-width: 600px) {
