@@ -1,18 +1,14 @@
-#index-banner.parallax-container
-  .section.no-pad-bot
-    .container
-      %br
-      %br
-      %h1.header.center.black-text 陳漢宇
-      / 想把header改成手寫中文簽名
-      .row.center
-        %h5.header.col.s12.light.black-text ＤＥＶＥＬＯＰＥＲ | ＥＮＴＲＥＰＲＥＮＥＵＲ | ＡＴＨＬＥＴＥ
-      .row.center
-      %br
-      %br
-  .parallax
-    %img{:src => "view.jpg"}/
-
+.carousel.carousel-slider.center{"data-indicators" => "true"}
+  .carousel-fixed-item.center
+    %a.btn.waves-effect.white.grey-text.darken-text-2 button
+  %img.carousel-item.red.white-text{:href => "#one!", :src =>"view.jpg"}
+    %h2 First Panel
+    %p.white-text This is your first panel
+  %img.carousel-item.amber.white-text{:href => "#two!", :src =>"coffee.jpg"}
+    %h2 Second Panel
+    %p.white-text This is your second panel
+  .carousel-item.green.white-text{:href => "#three!"}
+    %h2 Third Panel
 .container
   .section
     / Icon Section
