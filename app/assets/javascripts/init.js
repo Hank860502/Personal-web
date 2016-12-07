@@ -4,6 +4,7 @@
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
     $('.carousel.carousel-slider').carousel({full_width: true});
+    $('.slider').slider({full_width: true});
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
@@ -62,7 +63,7 @@ Materialize.scrollFire(options);
 });
 
 var eventListeners = function(){
-	$(".footer_link").hover(linkChangesColor, linkReturnsColor);
+	$(".link").hover(linkChangesColor, linkReturnsColor);
 	$(".read_more").on("click", spanIntro);
 	$(".read_more").hover(linkChangesColor, linkReturnsColor);
 	$(".new_page").on("click", newWindow);

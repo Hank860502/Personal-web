@@ -3403,10 +3403,10 @@ $(document).ready(function(){
 
     init : function(options) {
       var defaults = {
-        indicators: true,
+        indicators: false,
         height: 400,
         transition: 500,
-        interval: 6000
+        interval: 4000
       };
       options = $.extend(defaults, options);
 

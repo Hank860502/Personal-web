@@ -8,7 +8,7 @@ RSpec.feature "Welcomes", type: :feature, js: true do
 		
 		it 'has my three role' do
 			visit root_path
-			expect(page).to have_content("ＤＥＶＥＬＯＰＥＲ | ＥＮＴＲＥＰＲＥＮＥＵＲ | ＡＴＨＬＥＴＥ")
+			expect(page).to have_content("Data Visualization")
 		end
 	end
 

@@ -1,10 +1,24 @@
-.carousel.carousel-slider.center{"data-indicators" => "true"}
-  %a.carousel-item.welcome{:href=>"#"}
-    %img{:src =>"view.jpg"}
-  %a.carousel-item.welcome{:href=>"#"}
-    %img{:src =>"coffee.jpg"}
-  %a.carousel-item.welcome{:href=>"/athlete"}
-    %img{:src=>"hank.jpg"}
+.slider
+  %ul.slides
+    %li
+      %a{:href => "/athlete"}
+        %img{:src => "view.jpg"}/
+        .caption.center-align
+          %h3 Developer
+          %h5.light.grey-text.text-lighten-3 Here's our small slogan.
+    %li
+      %a{:href => "/entrepreneur"}
+        %img{:src => "coffee.jpg"}/
+        .caption.left-align
+          %h3 Entrepreneur
+          %h5.light.grey-text.text-lighten-3 Here's our small slogan.
+    %li
+      %a{:href => "/athlete"}
+        %img{:src => "hank.jpg"}/
+        .caption.right-align
+          %h3 Athlete
+          %h5.light.grey-text.text-lighten-3 Here's our small slogan.
+
 .container
   .section
     / Icon Section
@@ -12,7 +26,8 @@
       .col.s12.m4
         .icon-block
           %h2.center.black-text
-            %i.material-icons airplay
+            %a.black-text.link{:href => "/athlete"}
+              %i.material-icons airplay
           %h5.center DEVELOPER
           %p.light.intro In August, 2015, I attend my first Hackathon in National Taiwan University, where my interest in computer starts. Learning 3 computer languages, 13 frameworks for web and mobile application development, and 2 test-driven delvelopment, I graduated from Dev Bootcamp in San Francisco during...
           %p.light.intro.more_text  In August, 2015, I attend my first Hackathon in National Taiwan University, where my interest in computer starts. Learning 3 computer languages, 13 frameworks for web and mobile application development, and 2 test-driven delvelopment, I graduated from Dev Bootcamp in San Francisco during my gap year. Attending big and small competition, I persue my interest in programing and develop my skills in web and mobile development. With my talent in web and mobile application development, my motivation to keep improving is to produce tools that enhance the quality of lives.
@@ -20,14 +35,16 @@
       .col.s12.m4
         .icon-block
           %h2.center.black-text
-            %i.material-icons group
+            %a.black-text.link{:href => "/entrepreneur"}
+              %i.material-icons group
           %h5.center ENTREPRENEUR
           %p.light.intro Combining the practical skills as a developer, and the personality of diversity-mainly built from traveling and working with people from varieties of countries, as a tennis player, I am now able to fulfill most of my startup ideas. What motivates me to learn and to innovate is a “positive jealousy”. People who are more...
           %p.light.intro.more_text Combining the practical skills as a developer, and the personality of diversity-mainly built from traveling and working with people from varieties of countries, as a tennis player, I am now able to fulfill most of my startup ideas. What motivates me to learn and to innovate is a “positive jealousy”. People who are more successful than I make me feel a strong curiosity that makes eager to learn. Therefore, I enjoy stepping out of my comfort zone and embrace myself in an unfamiliar enviroment for my best learning. In conclusion, passionate and preseverance are the words to describe myself as an entrepreneur.
       .col.s12.m4
         .icon-block
           %h2.center.black-text
-            %i.material-icons power_settings_new
+            %a.black-text.link{:href => "/athlete"}
+              %i.material-icons power_settings_new
           %h5.center ATHLETE
           %p.light.intro Playing tennis at the professional level since my teenage years allowed me to bring discipline, integrity and perseverance to any goal I am determined to succeed in. Competing in junior's and men's tournaments around the world for more than 8 years, playing 500+ official matches, 50+ cities in 13 countries...
           %p.light.intro.more_text Playing tennis at the professional level since my teenage years allowed me to bring discipline, integrity and perseverance to any goal I am determined to succeed in. Competing in junior's and men's tournaments around the world for more than 8 years, playing 500+ official matches, 50+ cities in 13 countries, and 100000+ hours on practicing, I could not ask for a more plentiful childhood than this. With the highest ranking of #367 in World Junior Tennis, I begin my journey in men's professional tennis at the age of 18.
@@ -68,7 +85,7 @@
       .row.right
         %h5.col.s12.black-text.name Hank Chen, 陳漢宇
   .parallax
-    %img{:src => "hank.jpg"}/
+    %img.responsive-image{:src => "hank.jpg"}/
 
 
 
