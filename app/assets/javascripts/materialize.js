@@ -3403,7 +3403,7 @@ $(document).ready(function(){
 
     init : function(options) {
       var defaults = {
-        indicators: false,
+        indicators: true,
         height: 400,
         transition: 500,
         interval: 4000
