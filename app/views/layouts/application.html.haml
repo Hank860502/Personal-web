@@ -1,0 +1,54 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title HankChen
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    / materialize icon
+    %link{:href => "http://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}/
+    %link{:href => "/font-awesome/css/font-awesome.min.css", :rel => "stylesheet"}/
+    %link{:href => "../c3/c3.css", :rel => "stylesheet", :type => "text/css"}/
+  %body
+    %script{:src => "https://code.jquery.com/jquery-2.1.1.min.js", :type => "text/javascript"}
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"}
+    / Load d3.js and c3.js
+    %script{:src => "../d3/d3.min.js"}
+    %script{:src => "../c3/c3.min.js"}
+    %nav.white{:role => "navigation"}
+      .nav-wrapper.container
+        %a#logo-container.brand-logo{:href => "/"}
+          %img.navbar-logo{:src => "fulllogo.png"}/
+        %ul.right.hide-on-med-and-down
+          %li
+            %a{:href => "#"} Projects
+          %li
+            %a{:href => "#"} Resume
+        %ul#nav-mobile.side-nav
+          %li
+            %a{:href => "#"} Projects
+          %li
+            %a{:href => "#"} Resume
+        %a.button-collapse{"data-activates" => "nav-mobile", :href => "#"}
+          %i.material-icons menu
+    = yield
+    %footer.myfooter
+      %center
+        %a.black-text.go_top{:href => "#top"}
+          %i.fa.fa-angle-up.fa-4x{"aria-hidden" => "true"}
+      .footer_links
+        %center
+          %a.black-text.link{:href => "https://github.com/Hank860502"}
+            %i.fa.fa-github.fa-2x{"aria-hidden" => "true"}
+          %a.black-text.link{:href => "https://www.linkedin.com/in/hank860502"}
+            %i.fa.fa-linkedin.fa-2x{"aria-hidden" => "true"}
+          %a.black-text.link{:href => "mailto:hank860502@gmail.com"}
+            %i.fa.fa-paper-plane.fa-2x{"aria-hidden" => "true"}
+          %a.black-text.link{:href => "https://www.facebook.com/profile.php?id=100001986804471"}
+            %i.fa.fa-facebook.fa-2x{"aria-hidden" => "true"}
+          %a.black-text.link{:href => "https://www.instagram.com/hank0502/"}
+            %i.fa.fa-instagram.fa-2x{"aria-hidden" => "true"}
+      %hr.footer/
+      %center.copyright © Hank Chen | 2016
