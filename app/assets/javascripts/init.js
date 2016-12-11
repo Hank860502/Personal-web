@@ -3,6 +3,9 @@
 
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
+    $('.carousel.carousel-slider').carousel({full_width: true});
+    $('.slider').slider({full_width: true});
+    $('.modal-trigger').leanModal();
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
@@ -21,7 +24,7 @@ $(document).ready(function() {
         onmouseout: function (d, i) { console.log("onmouseout", d, i); }
 	  },
 	  color: {
-	  	pattern: ["#E77400", "#E70000", "#0074E7", "#e7e700", "#00e700", "#74e700", "#68cf00"]
+	  	pattern: ["#E77400", "#E70000", "#0074E7", "#e7e700", "#00e700", "#74e700", "#68cf00", "#E70000"]
 	  },
     donut: {
         title: "TECHNOLOGIES"
@@ -49,6 +52,7 @@ $(document).ready(function() {
 	            ["jQuery", 5],
 	            ["D3.js", 5],
 	            ["C3.js", 5],
+	            ["RSpec", 10]
 	        ]
 	    	});
     	} },
@@ -59,7 +63,7 @@ Materialize.scrollFire(options);
 });
 
 var eventListeners = function(){
-	$(".footer_link").hover(linkChangesColor, linkReturnsColor);
+	$(".link").hover(linkChangesColor, linkReturnsColor);
 	$(".read_more").on("click", spanIntro);
 	$(".read_more").hover(linkChangesColor, linkReturnsColor);
 	$(".new_page").on("click", newWindow);
