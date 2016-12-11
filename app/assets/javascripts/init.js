@@ -6,6 +6,7 @@
     $('.carousel.carousel-slider').carousel({full_width: true});
     $('.slider').slider({full_width: true});
     $('.modal-trigger').leanModal();
+    $('ul.tabs').tabs();
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
@@ -69,7 +70,7 @@ var eventListeners = function(){
 	$(".new_page").on("click", newWindow);
 	$(".go_top").on("click", goToTop);
 	$(".go_top").hover(linkChangesColor, linkReturnsColor);
-
+	$(".underline.grey-text").hover(linkReturnsColor, linkChangesColor)
 }
 
 function goToTop(e){
