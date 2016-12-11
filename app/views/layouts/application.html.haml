@@ -18,7 +18,7 @@
     %script{:src => "../d3/d3.min.js"}
     %script{:src => "../c3/c3.min.js"}
     -if request.original_url == "http://localhost:3000/athlete"
-
+      
     -else
       %nav.white{:role => "navigation"}
         .nav-wrapper.container
@@ -28,7 +28,13 @@
             %li
               %a{:href => "#"} Projects
             %li
-              %a{:href => "#"} Resume
+              %a.modal-trigger{:href => "#modal1"} Resume
+              #modal1.modal.modal-fixed-footer
+                .modal-content
+                  %h4.black-text Modal Header
+                  .black-text A bunch of text
+                .modal-footer
+                  %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{:href => "#"} Done
           %ul#nav-mobile.side-nav
             %li
               %a{:href => "#"} Projects
