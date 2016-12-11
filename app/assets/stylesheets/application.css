@@ -15,11 +15,11 @@
  */
 .myfooter{
 	background-color: white;
-	height: 20vw;
+	height: 25vw;
 }
 
 .footer_links {
-	padding-top: 50px;
+	margin-top: 80px;
 }
 
 .copyright {
@@ -27,7 +27,7 @@
 }
 
 .name {
-	margin-top: 190px;
+	margin-top: 280px;
 }
 
 i {
@@ -47,8 +47,7 @@ a {
 }
 
 .navbar-logo {
-	height: 59px;
-	padding-top: 3px;
+	height: 66px;
 }
 
 .custom_modal{
@@ -57,6 +56,15 @@ a {
 
 .custom_img{
   width: 100%;
+}
+
+.active-nav{
+  text-decoration: underline;
+}
+
+.underline:hover {
+  text-decoration: underline;
+  background-color: white;
 }
 
 video { 

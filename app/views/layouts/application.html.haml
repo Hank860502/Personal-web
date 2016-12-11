@@ -19,16 +19,18 @@
     %script{:src => "../c3/c3.min.js"}
     -if request.original_url == "http://localhost:3000/athlete"
       
-    -else
+    -elsif request.original_url == "http://localhost:3000/"
       %nav.white{:role => "navigation"}
         .nav-wrapper.container
           %a#logo-container.brand-logo{:href => "/"}
-            %img.navbar-logo{:src => "fulllogo.png"}
+            %img.navbar-logo{:src => "sign.png"}
           %ul.right.hide-on-med-and-down
             %li
-              %a{:href => "#"} Projects
+              %a.underline.black-text.active-nav{:href => "/"} Home
             %li
-              %a.modal-trigger{:href => "#modal1"} Resume
+              %a.underline.grey-text{:href => "#"} About Me
+            %li
+              %a.modal-trigger.underline.grey-text{:href => "#modal1"} Resume
               #modal1.modal.modal-fixed-footer.custom_modal
                 .modal-content
                   %h4.black-text Preview resume
@@ -38,7 +40,7 @@
                   %a.modal-action.waves-effect.waves-green.btn-flat{:href => "/resume.pdf", :target => "_blank"} Download
           %ul#nav-mobile.side-nav
             %li
-              %a{:href => "#"} Projects
+              %a{:href => "#"} About Me
             %li
               %a.modal-trigger{:href => "#modal1"} Resume
               #modal1.modal.modal-fixed-footer.custom_modal
@@ -49,7 +51,16 @@
                   %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{:href => "#"} Close
                   %a.modal-action.waves-effect.waves-green.btn-flat{:href => "/resume.pdf", :target => "_blank"} Download
           %a.button-collapse{"data-activates" => "nav-mobile", :href => "#"}
-            %i.material-icons menu
+            %i.material-icons.black-text menu
+    -else
+      %ul.tabs.tabs-transparent
+        %li.tab
+          %a.black-text{:href => "#test1"} Test 1
+        %li.tab
+          %a.black-text.active{:href => "#test2"} Test 2
+        %li.tab
+          %a.black-text{:href => "#test4"} Test 4
+
     = yield
     -if request.original_url == "http://localhost:3000/athlete"
       
