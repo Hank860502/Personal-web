@@ -88,7 +88,20 @@
 
     = yield
     -if request.original_url == "http://localhost:3000/athlete"
-      
+    
+    -elsif request.original_url == "http://localhost:3000/about"
+      %footer
+        .row.about_row.about_style
+          %a.black-text.link{:href => "https://github.com/Hank860502"}
+            %i.fa.fa-github{"aria-hidden" => "true"}
+          %a.black-text.link{:href => "https://www.linkedin.com/in/hank860502"}
+            %i.fa.fa-linkedin{"aria-hidden" => "true"}
+          %a.black-text.link{:href => "mailto:hank860502@gmail.com"}
+            %i.fa.fa-paper-plane{"aria-hidden" => "true"}
+          %a.black-text.link{:href => "https://www.facebook.com/people/Chen-Hanyu/100001986804471"}
+            %i.fa.fa-facebook{"aria-hidden" => "true"}
+          %a.black-text.link{:href => "https://www.instagram.com/hank0502"}
+            %i.fa.fa-instagram{"aria-hidden" => "true"}
     -else
       %footer.myfooter
         %center

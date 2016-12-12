@@ -67,6 +67,14 @@ a {
   background-color: white;
 }
 
+.about_style{
+  margin-top: 70px;
+}
+
+.about_row{
+  width: 85%;
+}
+
 video { 
   position: fixed;
   top: 50%;
