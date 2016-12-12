@@ -58,5 +58,12 @@ RSpec.feature "Welcomes", type: :feature, js: true do
 			first("img").click
 			page.should visit("/developer")
 		end
+
+		it 'visit Athlete page' do 
+			sleep(5)
+			first("img").click
+			page.should visit("/Entrepreneur")
+		end
+
 	end
 end

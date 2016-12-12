@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :athlete
   resources :developer
   resources :about
+  resources :entrepreneur
   
   root 'welcome#index'
 
