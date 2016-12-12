@@ -44,7 +44,7 @@ RSpec.feature "Welcomes", type: :feature, js: true do
 
 		it 'popup resume modal' do
 			first(:link, "Resume").click
-			expect(page).to have_content "Preview resume"
+			expect(page).to have_xpath("//img[@src='resume.png']")
 		end
 
 		it 'changes the current image appearing' do
