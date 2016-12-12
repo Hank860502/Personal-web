@@ -27,7 +27,7 @@
 }
 
 .name {
-	margin-top: 280px;
+	margin-top: 300px;
 }
 
 i {
@@ -80,15 +80,22 @@ a {
   letter-spacing: 0.0655em;
   font-size: 25px;
 }
+
 .font_muli{
   font-family: 'Muli', sans-serif;
   letter-spacing: 0.0655em;
   font-size: 14px;
 }
 
+.font_muli2{
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+}
+
 .font_arvo{
   font-family: 'Arvo', serif;
-  letter-spacing: 0.0635em
+  letter-spacing: 0.0635em;
+  font-size: 13px;
 
 }
 video { 
