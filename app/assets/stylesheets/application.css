@@ -75,6 +75,22 @@ a {
   width: 85%;
 }
 
+.font_poppins{
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.0655em;
+  font-size: 25px;
+}
+.font_muli{
+  font-family: 'Muli', sans-serif;
+  letter-spacing: 0.0655em;
+  font-size: 14px;
+}
+
+.font_arvo{
+  font-family: 'Arvo', serif;
+  letter-spacing: 0.0635em
+
+}
 video { 
   position: fixed;
   top: 50%;

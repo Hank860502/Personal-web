@@ -9,6 +9,7 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     / materialize icon
     %link{:href => "http://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}
+    %link{:href => "https://fonts.googleapis.com/css?family=Arvo|Muli|Poppins", :rel => "stylesheet"}
     %link{:href => "/font-awesome/css/font-awesome.min.css", :rel => "stylesheet"}
     %link{:href => "../c3/c3.css", :rel => "stylesheet", :type => "text/css"}
   %body
@@ -59,11 +60,11 @@
             %img.navbar-logo{:src => "sign.png"}
           %ul.right.hide-on-med-and-down
             %li
-              %a.underline.grey-text{:href => "/"} Home
+              %a.underline.grey-text.font_muli{:href => "/"} Home
             %li
-              %a.underline.black-text.active-nav{:href => "/about"} About Me
+              %a.underline.black-text.active-nav.font_muli{:href => "/about"} About Me
             %li
-              %a.modal-trigger.underline.grey-text{:href => "#modal1"} Resume
+              %a.modal-trigger.underline.grey-text.font_muli{:href => "#modal1"} Resume
               #modal1.modal.modal-fixed-footer.custom_modal
                 .modal-content
                   %h4.black-text Preview resume
