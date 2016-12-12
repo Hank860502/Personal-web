@@ -54,16 +54,34 @@ RSpec.feature "Welcomes", type: :feature, js: true do
     	visit root_path
   	end
 
-		it 'visit developer page' do 
-			first("img").click
-			page.should visit("/developer")
+		it 'has link to developer' do 
+			page.has_xpath?("/developer")
 		end
 
-		it 'visit Athlete page' do 
-			sleep(5)
-			first("img").click
-			page.should visit("/Entrepreneur")
+		it 'has link to entrepreneur' do 
+			page.has_xpath?("/entrepreneur")
 		end
+
+		it 'has link to athlete' do 
+			page.has_xpath?("/athlete")
+		end
+
+		it 'has link to about' do
+			page.has_xpath?("/about")
+		end
+
+		it 'has link to github' do
+			page.has_xpath?("//github.com/Hank860502")
+		end
+
+		it 'has link to linkedin' do
+			page.has_xpath?("//linkedin.com/in/hank860502")
+		end
+
+		it 'has link to instagram' do
+			page.has_xpath?("//instagram.com/hank0502")
+		end
+		# no facebook test
 
 	end
 end
