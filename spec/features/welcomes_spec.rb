@@ -42,6 +42,11 @@ RSpec.feature "Welcomes", type: :feature, js: true do
 			# not sure if visit can be use like this, test passes no matter is("#top") or ("#bottom")
 		end
 
+		it 'popup resume modal' do
+			first(:link, "Resume").click
+			expect(page).to have_content "Preview resume"
+		end
+
 		it 'changes the current image appearing' do
 			sleep(5)
 			expect(page).to have_content '"Do. Or do not. There is no try." - Yoda, Jedi Master.'
