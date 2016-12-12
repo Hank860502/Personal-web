@@ -42,6 +42,11 @@ RSpec.feature "Welcomes", type: :feature, js: true do
 			# not sure if visit can be use like this, test passes no matter is("#top") or ("#bottom")
 		end
 
+		it 'popup resume modal' do
+			first(:link, "Resume").click
+			expect(page).to have_xpath("//img[@src='resume.png']")
+		end
+
 		it 'changes the current image appearing' do
 			sleep(5)
 			expect(page).to have_content '"Do. Or do not. There is no try." - Yoda, Jedi Master.'
@@ -54,9 +59,34 @@ RSpec.feature "Welcomes", type: :feature, js: true do
     	visit root_path
   	end
 
-		it 'visit developer page' do 
-			first("img").click
-			page.should visit("/developer")
+		it 'has link to developer' do 
+			page.has_xpath?("/developer")
 		end
+
+		it 'has link to entrepreneur' do 
+			page.has_xpath?("/entrepreneur")
+		end
+
+		it 'has link to athlete' do 
+			page.has_xpath?("/athlete")
+		end
+
+		it 'has link to about' do
+			page.has_xpath?("/about")
+		end
+
+		it 'has link to github' do
+			page.has_xpath?("//github.com/Hank860502")
+		end
+
+		it 'has link to linkedin' do
+			page.has_xpath?("//linkedin.com/in/hank860502")
+		end
+
+		it 'has link to instagram' do
+			page.has_xpath?("//instagram.com/hank0502")
+		end
+		# no facebook test
+
 	end
 end
