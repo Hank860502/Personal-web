@@ -36,21 +36,23 @@ RSpec.feature "Welcomes", type: :feature, js: true do
     	visit root_path
   	end
 		
-		it 'scroll back to the top when clicking on toTop button' do
-			find(".go_top").click
-			page.should visit("#top")
-			# not sure if visit can be use like this, test passes no matter is("#top") or ("#bottom")
+		it 'changes the current image appearing' do
+			sleep(5)
+			expect(page).to have_content '"Do. Or do not. There is no try." - Yoda, Jedi Master.'
 		end
 
 		it 'popup resume modal' do
 			first(:link, "Resume").click
 			expect(page).to have_xpath("//img[@src='resume.png']")
 		end
-
-		it 'changes the current image appearing' do
-			sleep(5)
-			expect(page).to have_content '"Do. Or do not. There is no try." - Yoda, Jedi Master.'
+		
+		it 'scroll back to the top when clicking on toTop button' do
+			find(".go_top").click
+			page.should visit("#top")
+			# not sure if visit can be use like this, test passes no matter is("#top") or ("#bottom")
+			# if this test is placed in front of any test, the followed test fails... 
 		end
+
 
 	end
 
