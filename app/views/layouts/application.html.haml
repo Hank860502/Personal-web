@@ -9,6 +9,7 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     / materialize icon
     %link{:href => "http://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}
+    %link{:href => "https://fonts.googleapis.com/css?family=Arvo|Muli|Poppins", :rel => "stylesheet"}
     %link{:href => "/font-awesome/css/font-awesome.min.css", :rel => "stylesheet"}
     %link{:href => "../c3/c3.css", :rel => "stylesheet", :type => "text/css"}
   %body
@@ -26,14 +27,14 @@
             %img.navbar-logo{:src => "sign.png"}
           %ul.right.hide-on-med-and-down
             %li
-              %a.underline.black-text.active-nav{:href => "/"} Home
+              %a.underline.black-text.active-nav.font_muli2{:href => "/"} Home
             %li
-              %a.underline.grey-text{:href => "/about"} About Me
+              %a.underline.grey-text.font_muli2{:href => "/about"} About Me
             %li
-              %a.modal-trigger.underline.grey-text{:href => "#modal1"} Resume
+              %a.modal-trigger.underline.grey-text.font_muli2{:href => "#modal1"} Resume
               #modal1.modal.modal-fixed-footer.custom_modal
                 .modal-content
-                  %h4.black-text Preview resume
+                  %h4.black-text.font_arvo Preview resume
                   %img.custom_img{:src => "resume.png"}
                 .modal-footer
                   %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{:href => "#"} Close
@@ -45,7 +46,7 @@
               %a.modal-trigger{:href => "#modal1"} Resume
               #modal1.modal.modal-fixed-footer.custom_modal
                 .modal-content
-                  %h4.black-text Preview resume
+                  %h4.black-text.font_arvo Preview resume
                   %img.custom_img{:src => "resume.png"}
                 .modal-footer
                   %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{:href => "#"} Close
@@ -59,14 +60,14 @@
             %img.navbar-logo{:src => "sign.png"}
           %ul.right.hide-on-med-and-down
             %li
-              %a.underline.grey-text{:href => "/"} Home
+              %a.underline.grey-text.font_muli2{:href => "/"} Home
             %li
-              %a.underline.black-text.active-nav{:href => "/about"} About Me
+              %a.underline.black-text.active-nav.font_muli2{:href => "/about"} About Me
             %li
-              %a.modal-trigger.underline.grey-text{:href => "#modal1"} Resume
+              %a.modal-trigger.underline.grey-text.font_muli2{:href => "#modal1"} Resume
               #modal1.modal.modal-fixed-footer.custom_modal
                 .modal-content
-                  %h4.black-text Preview resume
+                  %h4.black-text.font_arvo Preview resume
                   %img.custom_img{:src => "resume.png"}
                 .modal-footer
                   %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{:href => "#"} Close
@@ -78,7 +79,7 @@
               %a.modal-trigger{:href => "#modal1"} Resume
               #modal1.modal.modal-fixed-footer.custom_modal
                 .modal-content
-                  %h4.black-text Preview resume
+                  %h4.black-text.font_arvo Preview resume
                   %img.custom_img{:src => "resume.png"}
                 .modal-footer
                   %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{:href => "#"} Close
@@ -88,7 +89,27 @@
 
     = yield
     -if request.original_url == "http://localhost:3000/athlete"
-      
+    
+    -elsif request.original_url == "http://localhost:3000/about"
+      %footer
+        .row.about_row.about_style
+          .col.l6.s12
+            %a.black-text.link{:href => "https://github.com/Hank860502"}
+              %i.fa.fa-github{"aria-hidden" => "true"}
+            %a.black-text.link{:href => "https://www.linkedin.com/in/hank860502"}
+              %i.fa.fa-linkedin{"aria-hidden" => "true"}
+            %a.black-text.link{:href => "https://www.facebook.com/people/Chen-Hanyu/100001986804471"}
+              %i.fa.fa-facebook{"aria-hidden" => "true"}
+            %a.black-text.link{:href => "https://www.instagram.com/hank0502"}
+              %i.fa.fa-instagram{"aria-hidden" => "true"}
+          .col.l4.offset-l2.s12.font_muli
+            %ul
+              %li
+                email:
+                %a.black-text{:href => "mailto:hank860502@gmail.com"} hank860502@gmail.com
+              %li
+                phone: +(886)937-583-271
+
     -else
       %footer.myfooter
         %center
@@ -107,4 +128,4 @@
             %a.black-text.link{:href => "https://www.instagram.com/hank0502"}
               %i.fa.fa-instagram.fa-2x{"aria-hidden" => "true"}
         %hr.footer
-        %center.copyright © Hank Chen | 2016
+        %center.copyright.font_arvo © Hank Chen | 2016
