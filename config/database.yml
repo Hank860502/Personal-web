@@ -81,6 +81,6 @@ test:
 production:
   <<: *default
   database: hank_production
-  username: hank8652
-  password: zxcvbnm8652
+  username: postgres
+  password: 
   host: localhost
