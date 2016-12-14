@@ -82,4 +82,4 @@ production:
   <<: *default
   database: hank_production
   username: hank
-  password: 0000
+  password: zxcvbnm8652
