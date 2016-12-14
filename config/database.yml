@@ -83,3 +83,5 @@ production:
   database: hank_production
   username: hank
   password: zxcvbnm8652
+
+host: www.hankchentennis.com
