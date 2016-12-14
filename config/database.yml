@@ -81,6 +81,6 @@ test:
 production:
   <<: *default
   database: hank_production
-  username: postgres
+  username: hosting-db
   password: 
   host: localhost
