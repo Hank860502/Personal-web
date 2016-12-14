@@ -81,6 +81,6 @@ test:
 production:
   <<: *default
   database: hank_production
-  username: hank
+  username: hank8652
   password: zxcvbnm8652
   host: localhost
