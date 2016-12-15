@@ -104,7 +104,14 @@ function spanIntro(e){
 
 function newWindow(e){
 	e.preventDefault();
-	window.open(
-    "http://www.itftennis.com/juniors/players/player/profile.aspx?PlayerID=100211263",
-    "_blank"
-    )};
+	if($(this).attr("href")==="http://www.itftennis.com/juniors/players/player/profile.aspx?PlayerID=100211263"){
+		window.open(
+	    "http://www.itftennis.com/juniors/players/player/profile.aspx?PlayerID=100211263",
+	    "_blank"
+	  )} else if($(this).attr("href")==="https://github.com/Hank860502/Personal-web"){
+		window.open(
+	    "https://github.com/Hank860502/Personal-web",
+	    "_blank"
+	  )
+	};
+};
