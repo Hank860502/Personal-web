@@ -44,6 +44,7 @@ RSpec.feature "Welcomes", type: :feature, js: true do
 		it 'popup resume modal' do
 			first(:link, "Resume").click
 			expect(page).to have_xpath("//img[@src='resume.png']")
+			# test fail when the window is in mobile view cause resume is hidden in menu...
 		end
 		
 		it 'scroll back to the top when clicking on toTop button' do

@@ -1,9 +1,13 @@
 # Personal-web
 
 ##Stacks
-Ruby on Rails, HTML, CSS
+Ruby on Rails, HTML, CSS, Javascript
 
-##Frameworks
-JQuery, Materialize
+##Frameworks and Libraries
+JQuery, Materialize, C3.js, HAML
+
+##Test-Driven Development 
+RSpec, Capybara
 
 ##Link to the web 
+http://hankchentennis.com/
