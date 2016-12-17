@@ -33,21 +33,21 @@ $(document).ready(function() {
 	});
 
 	var options = [
-	  	{selector: '#chart', offset: 310, callback: function(el) {
+	  	{selector: '#chart', offset: 210, callback: function(el) {
       	chart.load({
 	        columns: [
 	            ["CSS", 40],
 	        ]
 	    	});
     	} },
-    	{selector: '#chart', offset: 400, callback: function(el) {
+    	{selector: '#chart', offset: 300, callback: function(el) {
       	chart.load({
 	        columns: [
 	            ["Javascript", 40],
 	        ]
 	    	});
     	} },
-    	{selector: '#chart', offset: 600, callback: function(el) {
+    	{selector: '#chart', offset: 400, callback: function(el) {
       	chart.load({
 	        columns: [
 	            ["RSpec", 14],
