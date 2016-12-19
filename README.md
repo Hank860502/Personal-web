@@ -11,3 +11,6 @@ RSpec, Capybara
 
 ##Link to the web 
 http://hankchentennis.com/
+
+##Contact Me
+hank860502@gmail.com
