@@ -18,9 +18,11 @@
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"}
     %script{:src => "../d3/d3.min.js"}
     %script{:src => "../c3/c3.min.js"}
+
     -if request.original_url == "http://localhost:3000/athlete"
-      
-    -elsif request.original_url == "http://localhost:3000/"
+      %a#logo-container.brand-logo{:href => "/"}
+        %img.navbar-logo{:src => "sign.png"}
+    -elsif request.original_url == "http://hankchentennis.com/"
       %nav.white{:role => "navigation"}
         .nav-wrapper.container
           %a#logo-container.brand-logo{:href => "/"}
@@ -41,7 +43,7 @@
                   %a.modal-action.waves-effect.waves-green.btn-flat{:href => "/resume.pdf", :target => "_blank"} Download
           %ul#nav-mobile.side-nav
             %li
-              %a{:href => "#"} About Me
+              %a{:href => "/about"} About Me
             %li
               %a.modal-trigger{:href => "#modal1"} Resume
               #modal1.modal.modal-fixed-footer.custom_modal
@@ -52,7 +54,7 @@
                   %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{:href => "#"} Close
                   %a.modal-action.waves-effect.waves-green.btn-flat{:href => "/resume.pdf", :target => "_blank"} Download
           %a.button-collapse{"data-activates" => "nav-mobile", :href => "#"}
-            %i.material-icons.black-text menu
+            %i.fa.fa-bars.black-text{"aria-hidden" => "true"}
     -else
       %nav.white{:role => "navigation"}
         .nav-wrapper.container
@@ -74,7 +76,7 @@
                   %a.modal-action.waves-effect.waves-green.btn-flat{:href => "/resume.pdf", :target => "_blank"} Download
           %ul#nav-mobile.side-nav
             %li
-              %a{:href => "#"} About Me
+              %a{:href => "/about"} About Me
             %li
               %a.modal-trigger{:href => "#modal1"} Resume
               #modal1.modal.modal-fixed-footer.custom_modal
@@ -85,12 +87,12 @@
                   %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{:href => "#"} Close
                   %a.modal-action.waves-effect.waves-green.btn-flat{:href => "/resume.pdf", :target => "_blank"} Download
           %a.button-collapse{"data-activates" => "nav-mobile", :href => "#"}
-            %i.material-icons.black-text menu
+            %i.fa.fa-bars.black-text{"aria-hidden" => "true"}
 
     = yield
-    -if request.original_url == "http://localhost:3000/athlete"
+    -if request.original_url == "http://hankchentennis.com/athlete"
     
-    -elsif request.original_url == "http://localhost:3000/about"
+    -elsif request.original_url == "http://hankchentennis.com/about"
       %footer
         .row.about_row.about_style
           .col.l6.s12

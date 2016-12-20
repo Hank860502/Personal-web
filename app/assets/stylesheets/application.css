@@ -104,6 +104,15 @@ a {
   font-size: 13px;
 
 }
+
+.font_arvo2{
+  font-family: 'Arvo', serif;
+  letter-spacing: 0.0635em;
+  font-size: 43px;
+  color: white;
+  margin-top: 25%;
+}
+
 video { 
   position: fixed;
   top: 50%;
@@ -123,7 +132,7 @@ video {
     height: 50px;
     padding-top: 2px;
   }
-  /*hank.jpg from home page not looking good in mobile*/
+    /*hank.jpg from home page not looking good in mobile*/
 
 }
 
