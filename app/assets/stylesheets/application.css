@@ -46,6 +46,10 @@ a {
 	height: 64px;
 }
 
+.athlete_logo{
+  height: 80px;
+  padding-left: 5%;
+}
 .custom_modal{
   width: 75%;
 }
@@ -106,7 +110,6 @@ a {
   letter-spacing: 0.0635em;
   font-size: 43px;
   color: white;
-  margin-top: 25%;
 }
 
 video { 
