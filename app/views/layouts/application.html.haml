@@ -20,8 +20,8 @@
     %script{:src => "../c3/c3.min.js"}
 
     -if request.original_url == "http://localhost:3000/athlete"
-      %a#logo-container.brand-logo{:href => "/"}
-        %img.navbar-logo{:src => "sign.png"}
+      %a{:href=> "/"}
+        %img.athlete_logo{:src => "blacklogo.png"}
     -elsif request.original_url == "http://hankchentennis.com/"
       %nav.white{:role => "navigation"}
         .nav-wrapper.container
@@ -90,7 +90,7 @@
             %i.fa.fa-bars.black-text{"aria-hidden" => "true"}
 
     = yield
-    -if request.original_url == "http://hankchentennis.com/athlete"
+    -if request.original_url == "http://localhost:3000/athlete"
     
     -elsif request.original_url == "http://hankchentennis.com/about"
       %footer
