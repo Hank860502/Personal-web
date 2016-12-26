@@ -60,7 +60,7 @@
         %img.athlete_logo{:src => "blacklogo.png"}
 
     = yield
-    -if request.original_url == "http://hankchentennis.com/"
+    -if request.original_url == "http://hankchentennis.com/" || request.original_url == "http://localhost:3000/"
       %footer.myfooter
         %center
           %a.black-text.go_top{:href => "#top"}
@@ -73,14 +73,14 @@
               %i.fa.fa-linkedin.fa-2x{"aria-hidden" => "true"}
             %a.black-text.link{:href => "mailto:hank860502@gmail.com"}
               %i.fa.fa-paper-plane.fa-2x{"aria-hidden" => "true"}
-            %a.black-text.link{:href => "https://www.facebook.com/people/Chen-Hanyu/100001986804471"}
+            %a.black-text.link{:href => "https://www.facebook.com/HankChenTennis/?ref=aymt_homepage_panel"}
               %i.fa.fa-facebook.fa-2x{"aria-hidden" => "true"}
             %a.black-text.link{:href => "https://www.instagram.com/hank0502"}
               %i.fa.fa-instagram.fa-2x{"aria-hidden" => "true"}
         %hr.footer
         %center.copyright.font_arvo © Hank Chen | 2016
     
-    -elsif request.original_url == "http://hankchentennis.com/about"
+    -elsif request.original_url == "http://hankchentennis.com/about" || request.original_url == "http://localhost:3000/about"
       %footer
         .row.about_row.about_style
           .col.l6.s12
@@ -88,9 +88,9 @@
               %i.fa.fa-github{"aria-hidden" => "true"}
             %a.black-text.link{:href => "https://www.linkedin.com/in/hank860502"}
               %i.fa.fa-linkedin{"aria-hidden" => "true"}
-            %a.black-text.link{:href => "https://www.facebook.com/people/Chen-Hanyu/100001986804471"}
+            %a.black-text.link{:href => "https://www.facebook.com/HankChenTennis/?ref=aymt_homepage_panel"}
               %i.fa.fa-facebook{"aria-hidden" => "true"}
-            %a.black-text.link{:href => "https://www.instagram.com/hank0502"}
+            %a.black-text.link{:href => "https://www.instagram.com/hankchentennis"}
               %i.fa.fa-instagram{"aria-hidden" => "true"}
           .col.l4.offset-l2.s12.font_muli
             %ul
