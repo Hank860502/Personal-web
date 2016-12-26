@@ -20,13 +20,13 @@ RSpec.feature "Welcomes", type: :feature, js: true do
 
 		it 'clicks on read more button will append hidden text' do
 			find(".read_more").find(".fa-2x").click
-			expect(page).to have_content("In August, 2015, I attend my first Hackathon in National Taiwan University, where my interest in computer starts. Learning 3 computer languages, 13 frameworks for web and mobile application development, and 2 test-driven delvelopment, I graduated from Dev Bootcamp in San Francisco during my gap year. Attending big and small competition, I persue my interest in programing and develop my skills in web and mobile development. With my talent in web and mobile application development, my motivation to keep improving is to produce tools that enhance the quality of lives.")
+			expect(page).to have_content("In August, 2015, I attended my first Hackathon in National Taiwan University, where my interest in computer starts. Learning 3 programming languages, 13 frameworks for web and mobile application development, and 2 test-driven delvelopment, I graduated from Dev Bootcamp in San Francisco during my gap year. Attending big and small competitions, I persue my interest in programing and develop my skills in web and mobile development. With my talent in web and mobile application development, my motivation to keep improving is to produce tools that enhance the quality of lives.")
 		end
 
 		it 'collapse intro when click on read more button twice' do
 			find(".read_more").find(".fa-2x").click
 			find(".read_more").find(".fa-2x").click
-			expect(page).to have_no_content("In August, 2015, I attend my first Hackathon in National Taiwan University, where my interest in computer starts. Learning 3 computer languages, 13 frameworks for web and mobile application development, and 2 test-driven delvelopment, I graduated from Dev Bootcamp in San Francisco during my gap year. Attending big and small competition, I persue my interest in programing and develop my skills in web and mobile development. With my talent in web and mobile application development, my motivation to keep improving is to produce tools that enhance the quality of lives.")
+			expect(page).to have_no_content("In August, 2015, I attended my first Hackathon in National Taiwan University, where my interest in computer starts. Learning 3 programming languages, 13 frameworks for web and mobile application development, and 2 test-driven delvelopment, I graduated from Dev Bootcamp in San Francisco during my gap year. Attending big and small competitions, I persue my interest in programing and develop my skills in web and mobile development. With my talent in web and mobile application development, my motivation to keep improving is to produce tools that enhance the quality of lives.")
 		end
 
 	end
