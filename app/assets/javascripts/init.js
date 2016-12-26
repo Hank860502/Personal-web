@@ -112,6 +112,22 @@ function newWindow(e){
 		window.open(
 	    "https://github.com/Hank860502/Personal-web",
 	    "_blank"
+	  )} else if($(this).attr("href")==="https://github.com/Hank860502"){
+		window.open(
+	    "https://github.com/Hank860502",
+	    "_blank"
+	  )} else if($(this).attr("href")==="https://www.linkedin.com/in/hank860502"){
+		window.open(
+	    "https://www.linkedin.com/in/hank860502",
+	    "_blank"
+	  )} else if($(this).attr("href")==="https://www.facebook.com/HankChenTennis/?ref=aymt_homepage_panel"){
+		window.open(
+	    "https://www.facebook.com/HankChenTennis/?ref=aymt_homepage_panel",
+	    "_blank"
+	  )} else if($(this).attr("href")==="https://www.instagram.com/hankchentennis"){
+		window.open(
+	    "https://www.instagram.com/hankchentennis",
+	    "_blank"
 	  )
-	};
+	}
 };
