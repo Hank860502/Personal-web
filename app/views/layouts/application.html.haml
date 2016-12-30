@@ -29,11 +29,13 @@
             %img.navbar-logo{:src => "sign.png"}
           %ul.right.hide-on-med-and-down
             %li
-              %a.underline.black-text.active-nav.font_muli2{:href => "/"} Home
+              %a.navbarlinks.black-text.font_muli2{:href => "/"} Home
             %li
-              %a.underline.grey-text.font_muli2{:href => "/about"} About Me
+              %a.navbarlinks.grey-text.font_muli2{:href => "/about"} About Me
             %li
-              %a.modal-trigger.underline.grey-text.font_muli2{:href => "#modal1"} Resume
+              %a.navbarlinks.grey-text.font_muli2{:href => "/portfolio"} Portfolio
+            %li
+              %a.modal-trigger.navbarlinks.grey-text.font_muli2{:href => "#modal1"} Resume
               #modal1.modal.modal-fixed-footer.custom_modal
                 .modal-content
                   %h4.black-text.font_arvo Preview resume
@@ -64,11 +66,13 @@
             %img.navbar-logo{:src => "sign.png"}
           %ul.right.hide-on-med-and-down
             %li
-              %a.underline.grey-text.font_muli2{:href => "/"} Home
+              %a.navbarlinks.grey-text.font_muli2{:href => "/"} Home
             %li
-              %a.underline.black-text.active-nav.font_muli2{:href => "/about"} About Me
+              %a.navbarlinks.black-text.font_muli2{:href => "/about"} About Me
             %li
-              %a.modal-trigger.underline.grey-text.font_muli2{:href => "#modal1"} Resume
+              %a.navbarlinks.grey-text.font_muli2{:href => "/portfolio"} Portfolio
+            %li
+              %a.modal-trigger.navbarlinks.grey-text.font_muli2{:href => "#modal1"} Resume
               #modal1.modal.modal-fixed-footer.custom_modal
                 .modal-content
                   %h4.black-text.font_arvo Preview resume
@@ -92,7 +96,44 @@
 
           %a.button-collapse{"data-activates" => "nav-mobile", :href => "#"}
             %i.fa.fa-bars.black-text{"aria-hidden" => "true"}
-            
+    
+    -elsif request.original_url == "http://hankchentennis.com/portfolio" || request.original_url == "http://localhost:3000/portfolio"
+      %nav.white{:role => "navigation"}
+        .nav-wrapper.container
+          %a#logo-container.brand-logo{:href => "/"}
+            %img.navbar-logo{:src => "sign.png"}
+          %ul.right.hide-on-med-and-down
+            %li
+              %a.navbarlinks.grey-text.font_muli2{:href => "/"} Home
+            %li
+              %a.navbarlinks.grey-text.font_muli2{:href => "/about"} About Me
+            %li
+              %a.navbarlinks.black-text.font_muli2{:href => "/portfolio"} Portfolio
+            %li
+              %a.modal-trigger.navbarlinks.grey-text.font_muli2{:href => "#modal1"} Resume
+              #modal1.modal.modal-fixed-footer.custom_modal
+                .modal-content
+                  %h4.black-text.font_arvo Preview resume
+                  %img.custom_img{:src => "resume.png"}
+                .modal-footer
+                  %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{:href => "#"} Close
+                  %a.modal-action.waves-effect.waves-green.btn-flat{:href => "/resume.pdf", :target => "_blank"} Download
+          %ul#nav-mobile.side-nav
+            %li
+              .userView
+                .background
+                  %img{:src => "blurhank.png"}/
+                %a{:href => "/about"}
+                  %img.circle{:src => "smallabouthank.jpg"}/
+                %span.white-text.name Hank Chen
+                %span.white-text.email hankchentennis@gmail.com
+            %li
+              %a{:href => "/about"}
+                %i.fa.fa-info-circle
+                About Me
+
+          %a.button-collapse{"data-activates" => "nav-mobile", :href => "#"}
+            %i.fa.fa-bars.black-text{"aria-hidden" => "true"}
     -else
       %a{:href=> "/"}
         %img.athlete_logo{:src => "blacklogo.png"}
@@ -122,7 +163,7 @@
     
     -elsif request.original_url == "http://hankchentennis.com/about" || request.original_url == "http://localhost:3000/about"
       %footer
-        .row.about_row.about_style
+        .row.my_row.my_style
           .col.l6.s12
             %a.black-text.link{:href => "https://github.com/Hank860502"}
               %i.fa.fa-github{"aria-hidden" => "true"}
