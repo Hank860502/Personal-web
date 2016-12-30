@@ -2,6 +2,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:content => "blurhank.jpg", :property => "og:image"}
     %title HankChen
     = stylesheet_link_tag    'application'
     = javascript_include_tag 'application'
@@ -18,19 +19,23 @@
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"}
     %script{:src => "../d3/d3.min.js"}
     %script{:src => "../c3/c3.min.js"}
+    %script{:type=>"text/javascript"}
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-89471521-1', 'auto');ga('send', 'pageview');
 
-    -if request.original_url == "http://hankchentennis.com/" || request.original_url == "http://hankchentennis.com/about"
+    -if request.original_url == "http://hankchentennis.com/" || request.original_url == "http://localhost:3000/"
       %nav.white{:role => "navigation"}
         .nav-wrapper.container
           %a#logo-container.brand-logo{:href => "/"}
             %img.navbar-logo{:src => "sign.png"}
           %ul.right.hide-on-med-and-down
             %li
-              %a.underline.black-text.active-nav.font_muli2{:href => "/"} Home
+              %a.navbarlinks.black-text.font_muli2{:href => "/"} Home
             %li
-              %a.underline.grey-text.font_muli2{:href => "/about"} About Me
+              %a.navbarlinks.grey-text.font_muli2{:href => "/about"} About Me
             %li
-              %a.modal-trigger.underline.grey-text.font_muli2{:href => "#modal1"} Resume
+              %a.navbarlinks.grey-text.font_muli2{:href => "/portfolio"} Portfolio
+            %li
+              %a.modal-trigger.navbarlinks.grey-text.font_muli2{:href => "#modal1"} Resume
               #modal1.modal.modal-fixed-footer.custom_modal
                 .modal-content
                   %h4.black-text.font_arvo Preview resume
@@ -40,9 +45,34 @@
                   %a.modal-action.waves-effect.waves-green.btn-flat{:href => "/resume.pdf", :target => "_blank"} Download
           %ul#nav-mobile.side-nav
             %li
-              %a{:href => "/about"} About Me
+              .userView
+                .background
+                  %img{:src => "blurhank.png"}/
+                %a{:href => "/about"}
+                  %img.circle{:src => "smallabouthank.jpg"}/
+                %span.white-text.name Hank Chen
+                %span.white-text.email hankchentennis@gmail.com
             %li
-              %a.modal-trigger{:href => "#modal1"} Resume
+              %a{:href => "/about"}
+                %i.fa.fa-info-circle
+                About Me
+
+          %a.button-collapse{"data-activates" => "nav-mobile", :href => "#"}
+            %i.fa.fa-bars.black-text{"aria-hidden" => "true"}
+    -elsif request.original_url == "http://hankchentennis.com/about" || request.original_url == "http://localhost:3000/about"
+      %nav.white{:role => "navigation"}
+        .nav-wrapper.container
+          %a#logo-container.brand-logo{:href => "/"}
+            %img.navbar-logo{:src => "sign.png"}
+          %ul.right.hide-on-med-and-down
+            %li
+              %a.navbarlinks.grey-text.font_muli2{:href => "/"} Home
+            %li
+              %a.navbarlinks.black-text.font_muli2{:href => "/about"} About Me
+            %li
+              %a.navbarlinks.grey-text.font_muli2{:href => "/portfolio"} Portfolio
+            %li
+              %a.modal-trigger.navbarlinks.grey-text.font_muli2{:href => "#modal1"} Resume
               #modal1.modal.modal-fixed-footer.custom_modal
                 .modal-content
                   %h4.black-text.font_arvo Preview resume
@@ -50,46 +80,101 @@
                 .modal-footer
                   %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{:href => "#"} Close
                   %a.modal-action.waves-effect.waves-green.btn-flat{:href => "/resume.pdf", :target => "_blank"} Download
+          %ul#nav-mobile.side-nav
+            %li
+              .userView
+                .background
+                  %img{:src => "blurhank.png"}/
+                %a{:href => "/about"}
+                  %img.circle{:src => "smallabouthank.jpg"}/
+                %span.white-text.name Hank Chen
+                %span.white-text.email hankchentennis@gmail.com
+            %li
+              %a{:href => "/about"}
+                %i.fa.fa-info-circle
+                About Me
+
           %a.button-collapse{"data-activates" => "nav-mobile", :href => "#"}
             %i.fa.fa-bars.black-text{"aria-hidden" => "true"}
-            
+    
+    -elsif request.original_url == "http://hankchentennis.com/portfolio" || request.original_url == "http://localhost:3000/portfolio"
+      %nav.white{:role => "navigation"}
+        .nav-wrapper.container
+          %a#logo-container.brand-logo{:href => "/"}
+            %img.navbar-logo{:src => "sign.png"}
+          %ul.right.hide-on-med-and-down
+            %li
+              %a.navbarlinks.grey-text.font_muli2{:href => "/"} Home
+            %li
+              %a.navbarlinks.grey-text.font_muli2{:href => "/about"} About Me
+            %li
+              %a.navbarlinks.black-text.font_muli2{:href => "/portfolio"} Portfolio
+            %li
+              %a.modal-trigger.navbarlinks.grey-text.font_muli2{:href => "#modal1"} Resume
+              #modal1.modal.modal-fixed-footer.custom_modal
+                .modal-content
+                  %h4.black-text.font_arvo Preview resume
+                  %img.custom_img{:src => "resume.png"}
+                .modal-footer
+                  %a.modal-action.modal-close.waves-effect.waves-green.btn-flat{:href => "#"} Close
+                  %a.modal-action.waves-effect.waves-green.btn-flat{:href => "/resume.pdf", :target => "_blank"} Download
+          %ul#nav-mobile.side-nav
+            %li
+              .userView
+                .background
+                  %img{:src => "blurhank.png"}/
+                %a{:href => "/about"}
+                  %img.circle{:src => "smallabouthank.jpg"}/
+                %span.white-text.name Hank Chen
+                %span.white-text.email hankchentennis@gmail.com
+            %li
+              %a{:href => "/about"}
+                %i.fa.fa-info-circle
+                About Me
+
+          %a.button-collapse{"data-activates" => "nav-mobile", :href => "#"}
+            %i.fa.fa-bars.black-text{"aria-hidden" => "true"}
     -else
       %a{:href=> "/"}
         %img.athlete_logo{:src => "blacklogo.png"}
 
     = yield
-    -if request.original_url == "http://hankchentennis.com/"
+    -if request.original_url == "http://hankchentennis.com/" || request.original_url == "http://localhost:3000/"
       %footer.myfooter
         %center
           %a.black-text.go_top{:href => "#top"}
             %i.fa.fa-angle-up.fa-4x{"aria-hidden" => "true"}
             .footer_links
           %center
-            %a.black-text.link{:href => "https://github.com/Hank860502"}
+            %a.black-text.link.new_page{:href => "https://github.com/Hank860502"}
               %i.fa.fa-github.fa-2x{"aria-hidden" => "true"}
-            %a.black-text.link{:href => "https://www.linkedin.com/in/hank860502"}
+            %a.black-text.link.new_page{:href => "https://www.linkedin.com/in/hank860502"}
               %i.fa.fa-linkedin.fa-2x{"aria-hidden" => "true"}
             %a.black-text.link{:href => "mailto:hank860502@gmail.com"}
               %i.fa.fa-paper-plane.fa-2x{"aria-hidden" => "true"}
-            %a.black-text.link{:href => "https://www.facebook.com/people/Chen-Hanyu/100001986804471"}
+            %a.black-text.link.new_page{:href => "https://www.facebook.com/HankChenTennis/?ref=aymt_homepage_panel"}
               %i.fa.fa-facebook.fa-2x{"aria-hidden" => "true"}
-            %a.black-text.link{:href => "https://www.instagram.com/hank0502"}
+            %a.black-text.link.new_page{:href => "https://www.instagram.com/hankchentennis"}
               %i.fa.fa-instagram.fa-2x{"aria-hidden" => "true"}
+            %a.black-text.link.new_page{:href => "https://www.youtube.com/hankchentennis"}
+              %i.fa.fa-youtube-play.fa-2x{"aria-hidden" => "true"}
         %hr.footer
         %center.copyright.font_arvo © Hank Chen | 2016
     
-    -elsif request.original_url == "http://hankchentennis.com/about"
+    -elsif request.original_url == "http://hankchentennis.com/about" || request.original_url == "http://localhost:3000/about"
       %footer
-        .row.about_row.about_style
+        .row.my_row.my_style
           .col.l6.s12
             %a.black-text.link{:href => "https://github.com/Hank860502"}
               %i.fa.fa-github{"aria-hidden" => "true"}
             %a.black-text.link{:href => "https://www.linkedin.com/in/hank860502"}
               %i.fa.fa-linkedin{"aria-hidden" => "true"}
-            %a.black-text.link{:href => "https://www.facebook.com/people/Chen-Hanyu/100001986804471"}
+            %a.black-text.link{:href => "https://www.facebook.com/HankChenTennis/?ref=aymt_homepage_panel"}
               %i.fa.fa-facebook{"aria-hidden" => "true"}
-            %a.black-text.link{:href => "https://www.instagram.com/hank0502"}
+            %a.black-text.link{:href => "https://www.instagram.com/hankchentennis"}
               %i.fa.fa-instagram{"aria-hidden" => "true"}
+            %a.black-text.link{:href => "https://www.youtube.com/hankchentennis"}
+              %i.fa.fa-youtube-play{"aria-hidden" => "true"}
           .col.l4.offset-l2.s12.font_muli
             %ul
               %li
