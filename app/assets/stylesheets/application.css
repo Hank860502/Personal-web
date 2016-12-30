@@ -62,8 +62,7 @@ a {
   text-decoration: underline;
 }
 
-.underline:hover {
-  text-decoration: underline;
+.navbarlinks:hover {
   background-color: white;
 }
 

@@ -70,7 +70,7 @@ var eventListeners = function(){
 	$(".new_page").on("click", newWindow);
 	$(".go_top").on("click", goToTop);
 	$(".go_top").hover(linkChangesColor, linkReturnsColor);
-	$(".underline.grey-text").hover(linkReturnsColor, linkChangesColor)
+	$(".navbarlinks.grey-text").hover(linkReturnsColor, linkChangesColor)
 }
 
 function goToTop(e){
