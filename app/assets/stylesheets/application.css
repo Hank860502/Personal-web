@@ -66,11 +66,11 @@ a {
   background-color: white;
 }
 
-.about_style{
+.my_style{
   margin-top: 70px;
 }
 
-.about_row{
+.my_row{
   width: 85%;
 }
 
@@ -84,6 +84,11 @@ a {
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.0655em;
   font-size: 20px;
+}
+
+
+.font{
+  font-size: 30px;
 }
 
 .font_muli{
@@ -110,6 +115,7 @@ a {
   font-size: 43px;
   color: white;
 }
+
 
 video { 
   position: fixed;
