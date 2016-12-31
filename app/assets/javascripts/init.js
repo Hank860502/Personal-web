@@ -68,6 +68,7 @@ var eventListeners = function(){
 	$(".read_more").on("click", spanIntro);
 	$(".read_more").hover(linkChangesColor, linkReturnsColor);
 	$(".white_link").hover(whiteLinkChangesColor, whiteLinkReturnsColor);
+	$(".orange_link").hover(orangeBackgroundChangesColor, orangeBackgroundReturnsColor);
 	$(".new_page").on("click", newWindow);
 	$(".go_top").on("click", goToTop);
 	$(".go_top").hover(linkChangesColor, linkReturnsColor);
@@ -91,6 +92,11 @@ function whiteLinkChangesColor(e){
 	$(this).addClass("grey-text");
 }
 
+function orangeBackgroundChangesColor(e){
+	$(this).removeClass("orange_link");
+	$(this).addClass("orange_background");
+}
+
 function linkReturnsColor(e){
 	$(this).removeClass("grey-text");
 	$(this).addClass("black-text");
@@ -101,6 +107,10 @@ function whiteLinkReturnsColor(e){
 	$(this).addClass("white-text");
 }
 
+function orangeBackgroundReturnsColor(e){
+	$(this).removeClass("orange_background");
+	$(this).addClass("orange_link");
+}
 
 function spanIntro(e){
 	e.preventDefault();

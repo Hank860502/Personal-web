@@ -13,6 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+.orange_link{
+  color: #ff6c45;
+  font-size: 15px;
+  border-style: solid;
+  border-color: #ff6c45;
+  border-width: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+ }
+
+ .orange_background{
+  background-color: #ff6c45;
+  border-color: #ff6c45;
+  font-size: 15px;
+  border-width: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-style: solid;
+  color: white;
+ }
+
 .myfooter{
 	background-color: white;
 	height: 25vw;
