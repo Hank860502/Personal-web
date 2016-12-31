@@ -145,6 +145,12 @@ a {
   letter-spacing: 0.0705em;
 }
 
+.font_cuprum2{
+  font-family: 'Cuprum', sans-serif;
+  letter-spacing: 0.0705em;
+  font-size: 30px;
+}
+
 .font_muli{
   font-family: 'Muli', sans-serif;
   letter-spacing: 0.0655em;
