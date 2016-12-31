@@ -18,6 +18,11 @@
 	height: 25vw;
 }
 
+.portfolio_footer{
+  background-color: #262626;
+  height: 50vw;
+}
+
 .footer_links {
 	margin-top: 80px;
 }
@@ -89,6 +94,11 @@ a {
 
 .font{
   font-size: 30px;
+}
+
+.font_cuprum{
+  font-family: 'Cuprum', sans-serif;
+  letter-spacing: 0.0705em;
 }
 
 .font_muli{

@@ -11,6 +11,7 @@
     / materialize icon
     %link{:href => "http://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}
     %link{:href => "https://fonts.googleapis.com/css?family=Arvo|Muli|Poppins", :rel => "stylesheet"}
+    %link{:href => "https://fonts.googleapis.com/css?family=Cuprum", :rel => "stylesheet"}
     %link{:href => "/font-awesome/css/font-awesome.min.css", :rel => "stylesheet"}
     %link{:href => "../c3/c3.css", :rel => "stylesheet", :type => "text/css"}
   %body
@@ -182,4 +183,17 @@
                 %a.black-text{:href => "mailto:hank860502@gmail.com"} hank860502@gmail.com
               %li
                 phone: +(886)937-583-271
+    -elsif request.original_url == "http://hankchentennis.com/portfolio" || request.original_url == "http://localhost:3000/portfolio"
+      %footer.portfolio_footer
+        %center
+          %a.black-text.go_top{:href => "#top"}
+            %i.fa.fa-angle-up.fa-4x{"aria-hidden" => "true"}
+            .footer_links
+          %a.orange-text.font_cuprum{:href => "mailto:hank860502@gmail.com"} CONTACT
+          %center.my_style
+            %a.white-text.white_link.new_page.font_cuprum{:href => "https://github.com/Hank860502"} GITHUB
+            %a.white-text.white_link.new_page.font_cuprum{:href => "https://www.linkedin.com/in/hank860502"} LINKEDIN
+            %a.white-text.white_link.new_page.font_cuprum{:href => "https://www.facebook.com/HankChenTennis/?ref=aymt_homepage_panel"} FACEBOOK
+            %a.white-text.white_link.new_page.font_cuprum{:href => "https://www.instagram.com/hankchentennis"} INSTAGRAM
+            %a.white-text.white_link.new_page.font_cuprum{:href => "https://www.youtube.com/hankchentennis"} YOUTUBE
     -else

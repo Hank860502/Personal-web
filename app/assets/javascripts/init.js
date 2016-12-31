@@ -67,6 +67,7 @@ var eventListeners = function(){
 	$(".link").hover(linkChangesColor, linkReturnsColor);
 	$(".read_more").on("click", spanIntro);
 	$(".read_more").hover(linkChangesColor, linkReturnsColor);
+	$(".white_link").hover(whiteLinkChangesColor, whiteLinkReturnsColor);
 	$(".new_page").on("click", newWindow);
 	$(".go_top").on("click", goToTop);
 	$(".go_top").hover(linkChangesColor, linkReturnsColor);
@@ -85,12 +86,20 @@ function linkChangesColor(e){
 	$(this).addClass("grey-text");
 }
 
+function whiteLinkChangesColor(e){
+	$(this).removeClass("white-text");
+	$(this).addClass("grey-text");
+}
 
 function linkReturnsColor(e){
 	$(this).removeClass("grey-text");
 	$(this).addClass("black-text");
 }
 
+function whiteLinkReturnsColor(e){
+	$(this).removeClass("grey-text");
+	$(this).addClass("white-text");
+}
 
 
 function spanIntro(e){
