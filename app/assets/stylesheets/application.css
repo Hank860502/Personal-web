@@ -13,9 +13,58 @@
  *= require_tree .
  *= require_self
  */
+
+.orange_link{
+  color: #ff6c45;
+  font-size: 15px;
+  border-style: solid;
+  border-color: #ff6c45;
+  border-width: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+ }
+
+ .orange_background{
+  background-color: #ff6c45;
+  border-color: #ff6c45;
+  font-size: 15px;
+  border-width: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-style: solid;
+  color: white;
+ }
+
 .myfooter{
 	background-color: white;
 	height: 25vw;
+}
+
+.portfolio_footer{
+  background-color: #262626;
+  position: relative;
+  height: 300px;
+  margin-top: 200px;
+}
+
+
+.portfolio_footer::before{
+  background-color: #262626;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 75%;
+  -webkit-transform: skewY(-3deg);
+  transform: skewY(-3deg);
+  -webkit-transform-origin: 0%;
+  transform-origin: -175%;
 }
 
 .footer_links {
@@ -88,6 +137,17 @@ a {
 
 
 .font{
+  font-size: 30px;
+}
+
+.font_cuprum{
+  font-family: 'Cuprum', sans-serif;
+  letter-spacing: 0.0705em;
+}
+
+.font_cuprum2{
+  font-family: 'Cuprum', sans-serif;
+  letter-spacing: 0.0705em;
   font-size: 30px;
 }
 
