@@ -88,6 +88,7 @@ GEM
       nokogiri (~> 1.6.0)
       ruby_parser (~> 3.5)
     i18n (0.7.0)
+    instafeed (0.1.0)
     io-like (0.3.0)
     jbuilder (2.5.0)
       activesupport (>= 3.0.0, < 5.1)
@@ -222,6 +223,7 @@ DEPENDENCIES
   database_cleaner
   execjs
   haml-rails
+  instafeed
   jbuilder (~> 2.0)
   jquery-rails
   mime-types (~> 2.6.2)
