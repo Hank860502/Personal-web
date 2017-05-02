@@ -12,4 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require instafeed
 //= require_tree .
+var feed = new Instafeed({
+        get: 'user',
+        userId: 'aa9cc56526494d9d8b74acbd98ad1f04',
+        accessToken: '4295378203.1677ed0.6f34b95c313a4bdeb67b95e85a2f7d24'
+    });
+    feed.run();
+console.log(feed)
