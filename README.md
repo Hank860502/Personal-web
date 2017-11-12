@@ -1,16 +1,16 @@
 # Personal-web
 
-##Link to the website 
+## Link
 http://hankchentennis.com/
 
-##Stacks
+## Stacks
 Ruby on Rails, HTML, CSS, Javascript
 
-##Frameworks and Libraries
+## Frameworks and Libraries
 JQuery, Materialize, C3.js, HAML
 
-##Test-Driven Development 
+## Test-Driven Development 
 RSpec, Capybara
 
-##Contact Me
+## Contact
 hank860502@gmail.com
